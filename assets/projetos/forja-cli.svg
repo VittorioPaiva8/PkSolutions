@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="'JetBrains Mono', Consolas, monospace">
+  <rect width="1200" height="800" fill="#151515"/>
+  <rect x="120" y="100" width="960" height="600" rx="18" fill="#1F1F1F" stroke="#2C2C2C" stroke-width="2"/>
+  <circle cx="152" cy="132" r="7" fill="#FF3B00"/><circle cx="176" cy="132" r="7" fill="#3A3A3A"/><circle cx="200" cy="132" r="7" fill="#3A3A3A"/>
+  <text x="600" y="138" font-size="16" fill="#8A847A" text-anchor="middle">~/projetos/api — forja</text>
+  <g font-size="22">
+    <text x="160" y="210" fill="#F2EADB"><tspan fill="#FF3B00">$</tspan> forja new api --template=rest</text>
+    <text x="160" y="254" fill="#8A847A">  ◇ criando estrutura do projeto...</text>
+    <text x="160" y="290" fill="#8A847A">  ◇ instalando dependências <tspan fill="#F2EADB">(142 pacotes)</tspan></text>
+    <text x="160" y="326" fill="#8A847A">  ◇ configurando banco de dados</text>
+    <text x="160" y="362" fill="#F2EADB">  <tspan fill="#FF3B00">✓</tspan> pronto em 3.2s</text>
+    <text x="160" y="424" fill="#F2EADB"><tspan fill="#FF3B00">$</tspan> forja deploy --env=prod</text>
+    <text x="160" y="468" fill="#8A847A">  build   <tspan fill="#F2EADB">████████████████████</tspan> 100%</text>
+    <text x="160" y="504" fill="#8A847A">  testes  <tspan fill="#F2EADB">48 passaram</tspan>, 0 falharam</text>
+    <text x="160" y="540" fill="#8A847A">  deploy  <tspan fill="#F2EADB">https://api.exemplo.dev</tspan></text>
+    <text x="160" y="576" fill="#F2EADB">  <tspan fill="#FF3B00">✓</tspan> no ar</text>
+    <text x="160" y="638" fill="#F2EADB"><tspan fill="#FF3B00">$</tspan> <tspan fill="#F2EADB">▋</tspan></text>
+  </g>
+</svg>

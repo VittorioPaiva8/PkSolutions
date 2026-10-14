@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Painel PK</title>
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- Carregando -->
+  <section class="tela-central" id="tela-carregando">
+    <p class="carregando-texto">Carregando…</p>
+  </section>
+
+  <!-- Supabase ainda não configurado -->
+  <section class="tela-central" id="tela-config" hidden>
+    <div class="cartao">
+      <img class="cartao-logo" src="assets/logo.jpg" alt="">
+      <h1>Falta conectar o Supabase</h1>
+      <p>O painel precisa do Supabase para salvar as alterações e fazer o login. Siga o passo a passo do arquivo <code>LEIA-ME.md</code> e preencha o <code>js/config.js</code>.</p>
+      <p class="nota">Enquanto isso o site funciona normalmente com o conteúdo padrão.</p>
+    </div>
+  </section>
+
+  <!-- Login -->
+  <section class="tela-central" id="tela-login" hidden>
+    <form class="cartao" id="form-login">
+      <img class="cartao-logo" src="assets/logo.jpg" alt="">
+      <h1>Painel</h1>
+      <label for="login-email">E-mail</label>
+      <input id="login-email" type="email" autocomplete="username" required>
+      <label for="login-senha">Senha</label>
+      <input id="login-senha" type="password" autocomplete="current-password" required>
+      <button class="btn btn-primario" type="submit" id="login-botao">Entrar</button>
+      <p class="erro" id="login-erro" role="alert"></p>
+    </form>
+  </section>
+
+  <!-- Editor -->
+  <div id="tela-editor" hidden>
+    <header class="barra">
+      <div class="barra-marca">
+        <img src="assets/logo.jpg" alt="">
+        <span>Painel</span>
+      </div>
+      <span class="status" id="status">Tudo salvo</span>
+      <div class="barra-acoes">
+        <a class="btn" href="index.html" target="_blank" rel="noopener">Ver site</a>
+        <button class="btn btn-primario" id="salvar">Salvar</button>
+        <button class="btn btn-fantasma" id="sair">Sair</button>
+      </div>
+    </header>
+    <div class="corpo">
+      <nav class="abas" id="abas" aria-label="Partes do site"></nav>
+      <main class="painel" id="painel"></main>
+    </div>
+  </div>
+
+  <div class="aviso" id="aviso" role="status" hidden></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/conteudo-padrao.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/esquema.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PK — Portfólio</title>
+  <meta name="description" content="Portfólio de projetos de software.">
+  <link rel="icon" id="favicon" href="assets/logo.jpg">
+  <script>
+    // aplica o tema salvo antes de desenhar a página (evita "piscar")
+    try {
+      var t = localStorage.getItem("tema");
+      if (t) document.documentElement.dataset.tema = t;
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="fontes" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body class="carregando">
+
+  <!-- Todo o conteúdo é montado pelo js/site.js -->
+  <header class="topo" id="topo"></header>
+  <main id="app"></main>
+  <footer class="rodape" id="rodape"></footer>
+
+  <dialog id="modal" class="modal">
+    <button class="modal-fechar" id="modal-fechar" aria-label="Fechar">✕</button>
+    <div class="modal-conteudo" id="modal-conteudo"></div>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/conteudo-padrao.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
